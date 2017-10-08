@@ -71,6 +71,8 @@ request(url, function(error, response, body){
                     // define path
                     var dir = "./data";
 
+                    var time = moment().format("YYYY[-]MM[-]DD");
+
                     // If directory does not already exist
                     if(!fs.existsSync(dir)) {
                       // create directory
@@ -80,7 +82,7 @@ request(url, function(error, response, body){
                     // json2csv converts json into csv with column titles and proper line endings.
                     json2csv({ data: productInfo, fields: ['Title', 'Price', 'ImageURL', 'URL', 'Time']}, function(error, csv) {
                         // If file already exists writeFile will overwrite it
-                        fs.writeFile( dir + "/shirts4mike price list.csv", csv, function() {
+                        fs.writeFile( dir + "/" + time + ".csv", csv, function() {
                             if (error) throw error;
                                 console.log('Download complete');
                         });
