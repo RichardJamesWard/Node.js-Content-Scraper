@@ -13,8 +13,8 @@ Imagine you work for a price comparison website. You’ve been given the task to
 - [x] Program creates onedata folder if that folder doesn’t already exist. If the folder does exist, the program does nothing.
 ### Research npm packages
 - [x] Chosen scraping and CSV packages meet the following requirements on npm:
-•	1,000 downloads
-•	Updated in the last 6 months
+  *	1,000 downloads
+  *	Updated in the last 6 months
 ### Crawling
 - [x] The project uses thehttp://shirts4mike.com/shirts.phpURL as an entry point to look through the links on the page to find 8 shirts
 ### Scraping and Saving Data
